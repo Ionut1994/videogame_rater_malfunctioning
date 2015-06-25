@@ -1,0 +1,11 @@
+<div>
+    <h1><a href="/">Videogames</a></h1>
+</div>
+
+{% for game in games %}
+    <div>
+        <p>published: {{ game.published_date }}</p>
+        <h1><a href="">{{ game.title }}</a></h1>
+        <p><img src="static/{{ game.game_image }}"	</img></p>
+    </div>
+{% endfor %}
